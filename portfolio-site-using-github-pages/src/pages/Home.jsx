@@ -49,14 +49,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* IMAGE */}
-        <div className="mt-8 md:mt-0">
-          <img
-            src="/profile.jpg"
-            alt="Divesh S"
-            className="object-cover w-40 h-40 border-4 border-blue-100 rounded-full shadow-lg sm:w-52 sm:h-52 md:w-72 md:h-72"
-          />
-        </div>
+{/* IMAGE */}
+<div className="mt-8 md:mt-0">
+  <img
+    src={`${import.meta.env.BASE_URL}profile.jpg`}
+    alt="Divesh S"
+    className="object-cover w-40 h-40 border-4 border-blue-100 rounded-full shadow-lg sm:w-52 sm:h-52 md:w-72 md:h-72"
+  />
+</div>
 
       </section>
 

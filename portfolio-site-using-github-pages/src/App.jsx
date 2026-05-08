@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
@@ -9,11 +9,9 @@ import Services from "./pages/Services"
 import Contact from "./pages/Contact"
 import Resume from "./pages/Resume"
 
-const isProd = import.meta.env.PROD
-
 function App() {
   return (
-    <BrowserRouter basename={isProd ? "/portfolio-site-using-github-pages" : "/"}>
+    <HashRouter>
 
       {/* Layout Wrapper */}
       <div className="flex flex-col min-h-screen">
@@ -37,7 +35,7 @@ function App() {
 
       </div>
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
