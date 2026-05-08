@@ -1,18 +1,20 @@
-# 🌐 Portfolio Website (GitHub Pages)
+# 🌐 Divesh S — Portfolio Website
 
-> 🚀 Personal portfolio built with Vite + React + Tailwind CSS and deployed using GitHub Pages.
+> 🚀 Modern developer portfolio built with **Vite + React + Tailwind CSS** and deployed on **GitHub Pages**
 
 ---
 
 ## 📌 Overview
 
-This is my personal portfolio website designed to showcase my:
+This is my personal portfolio website showcasing my work, skills, and services across multiple domains:
 
-* 💻 Software Development projects
-* ☁️ Cloud & DevOps skills
-* 📊 Data Engineering work
-* 🔗 Blockchain & Web3 exploration
-* 💼 Freelance services
+* 💻 Full Stack Development
+* ☁️ Cloud & DevOps Engineering
+* 🤖 AI & Data Analytics
+* 🔗 Blockchain & Web3
+* 💼 Freelance & Consulting Services
+
+The goal of this portfolio is to present **real-world projects, technical expertise, and collaboration opportunities** in a clean, scalable UI.
 
 ---
 
@@ -20,18 +22,21 @@ This is my personal portfolio website designed to showcase my:
 
 * ⚛️ React (Vite)
 * 🎨 Tailwind CSS
-* 🔀 React Router
+* 🔀 React Router (HashRouter for GitHub Pages)
 * 🚀 GitHub Pages (Deployment)
+* 📦 gh-pages (CI deployment)
 
 ---
 
 ## ✨ Features
 
-* Responsive modern UI
-* Project showcase section
-* About & skills overview
-* Freelance services section
-* Contact information
+* 📱 Fully Responsive Design (Mobile + Desktop)
+* 🎯 Clean & Modern UI/UX
+* 🧩 Modular Component Structure
+* 📂 Projects Showcase with Links
+* 🧠 Services & Skills Section
+* 📄 Resume Viewer & Download
+* 📬 Contact Form (Mail Integration)
 
 ---
 
@@ -40,35 +45,53 @@ This is my personal portfolio website designed to showcase my:
 ```
 portfolio-site-using-github-pages/
 │
+├── public/
+│   ├── profile.jpg
+│   ├── resume.pdf
+│   └── favicon.ico
+│
 ├── src/
 │   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── Footer.jsx
+│   │
 │   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Services.jsx
+│   │   ├── Contact.jsx
+│   │   └── Resume.jsx
+│   │
 │   ├── App.jsx
 │   └── main.jsx
 │
-├── public/
-├── index.html
-└── package.json
+├── vite.config.js
+├── package.json
+└── index.html
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/portfolio-site-using-github-pages.git
 cd portfolio-site-using-github-pages
 ```
 
-### 2. Install dependencies
+---
+
+### 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Run locally
+---
+
+### 3️⃣ Run Locally
 
 ```bash
 npm run dev
@@ -78,39 +101,74 @@ npm run dev
 
 ## 🌍 Deployment (GitHub Pages)
 
+### 🔧 Build + Deploy
+
 ```bash
 npm run deploy
 ```
 
-👉 Live Site:
-https://YOUR-USERNAME.github.io/portfolio-site-using-github-pages/
+---
+
+### 🔗 Live Website
+
+👉 https://YOUR-USERNAME.github.io/portfolio-site-using-github-pages/
+
+---
+
+## ⚠️ Important Notes
+
+* Uses **HashRouter** to avoid 404 errors on refresh in GitHub Pages
+* Static assets (images, PDF) are served using:
+
+  ```
+  import.meta.env.BASE_URL
+  ```
+* Ensure all assets are inside `/public` folder
 
 ---
 
 ## 💼 Services
 
-I offer freelance services in:
+I provide services in:
 
-* Software Development
-* Cloud Setup & Deployment
-* DevOps & Automation
-* Data & Analytics
-* Blockchain & Web3
+* 🚀 Full Stack Development
+* ☁️ Cloud & DevOps Setup
+* 🤖 AI & Automation Solutions
+* 📊 Data Analytics & Dashboards
+* 🔗 Blockchain & Web3 Development
+* 🎯 Startup & Product Development Support
 
 ---
 
 ## 📬 Contact
 
-📧 [diveshswork@gmail.com](mailto:diveshswork@gmail.com)
+* 📧 Email: [diveshswork@gmail.com](mailto:diveshswork@gmail.com)
+* 🌐 Portfolio: https://YOUR-USERNAME.github.io/portfolio-site-using-github-pages/
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork and improve.
+Contributions, suggestions, and improvements are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
 
 ---
 
 ## ⭐ Support
 
-If you like this project, give it a ⭐ and share it!
+If you found this project useful:
+
+* ⭐ Star the repository
+* 🔁 Share with others
+* 🤝 Connect for collaboration
+
+---
+
+## 🧠 Author
+
+**Divesh S**
+Building scalable systems, communities, and impactful tech solutions 🚀
